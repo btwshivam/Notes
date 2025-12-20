@@ -123,6 +123,7 @@
 ---
 
 ## 2. LFX Mentorship & Selection Process
+<img src="https://blog.realogs.in/content/images/2023/07/lf-stacked-color.png" alt="LFX" height=80px/>
 
 ### 2.1 What is LFX (Linux Foundation X)?
 
@@ -131,8 +132,7 @@ LFX Mentorship is a platform by The Linux Foundation that connects mentors with 
 
 **Program Types:**
 1. **Full-time (12 weeks)** - $3,000-6,000 stipend
-2. **Part-time (24 weeks)** - Similar total compensation
-3. **Seasonal** - Spring, Summer, Fall terms
+2. **Seasonal** - Spring, Summer, Fall terms
 
 **Participating Projects:**
 - Kubernetes
@@ -226,9 +226,10 @@ LFX Mentorship is a platform by The Linux Foundation that connects mentors with 
 ---
 
 ## 3. Software Development Life Cycle (SDLC)
+<img src="https://miro.medium.com/0*wO81Bodh1Ifqdse8.png" alt="SDLC" height="" />
+
 
 ### 3.1 What is SDLC?
-
 **Definition:**
 A structured process for planning, creating, testing, and deploying software systems.
 
@@ -240,6 +241,7 @@ A structured process for planning, creating, testing, and deploying software sys
 - Facilitates maintenance
 
 ### 3.2 SDLC Phases
+<img src="https://media.licdn.com/dms/image/v2/D4E12AQFci8sRp9AeNw/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1666892134800?e=2147483647&v=beta&t=CjLMxPfwUVshzZM0_aheRb56nViUZIxxhMA9SWmotiA" alt="sdlc cycle"/>
 
 **1. Planning & Requirement Analysis**
 - Identify stakeholders
@@ -322,6 +324,7 @@ A structured process for planning, creating, testing, and deploying software sys
 ### 3.3 SDLC Models
 
 **1. Waterfall Model**
+<img src="https://cdn.bap-software.net/2023/09/waterfall1.jpg" alt="Waterfall Model"/>
 ```
 Requirements → Design → Implementation → Testing → Deployment → Maintenance
 ```
@@ -329,6 +332,7 @@ Requirements → Design → Implementation → Testing → Deployment → Mainte
 **Cons:** Inflexible, late testing, high risk
 
 **2. Agile Model**
+<img src="https://yuktisolutions.com/Content/Images/Untitled%20design%20(1).png" alt="agile"/>
 ```
 Iterative cycles: Plan → Design → Develop → Test → Review → Deploy
 ```
@@ -336,16 +340,19 @@ Iterative cycles: Plan → Design → Develop → Test → Review → Deploy
 **Cons:** Less predictable, requires experience
 
 **3. Iterative Model**
+<img src="https://www.simublade.com/blogs/wp-content/uploads/2024/04/Iterative-Methodology.png" alt="iterative model"/>
 - Build in increments
 - Each iteration is a mini-project
 - Refine with each cycle
 
 **4. Spiral Model**
+<img src="https://gowide.com/wp-content/uploads/2023/03/Spiral-Model.webp" alt="spiral"/>
 - Risk-driven approach
 - Combines waterfall and iterative
 - Four phases: Planning, Risk Analysis, Engineering, Evaluation
 
 **5. DevOps Model**
+<img src="https://miro.medium.com/1*d2MmOnSxHxbcyaLOCuO_Aw.jpeg" alt="devops">
 - Integration of Development and Operations
 - Continuous Integration/Continuous Deployment (CI/CD)
 - Automation and monitoring
@@ -372,6 +379,7 @@ Iterative cycles: Plan → Design → Develop → Test → Review → Deploy
 ---
 
 ## 4. Agile & Scrum Methodology
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20231213170651/Scrum-Process.jpg" alt="scrum">
 
 ### 4.1 Agile Manifesto
 
