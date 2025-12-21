@@ -125,7 +125,7 @@
 ## 2. LFX Mentorship & Selection Process
 <img src="https://blog.realogs.in/content/images/2023/07/lf-stacked-color.png" alt="LFX" height=80px/>
 
-### 2.1 What is LFX (Linux Foundation X)?
+### 2.1 What is LFX (Linux Foundation Mentorship)?
 
 **Overview:**
 LFX Mentorship is a platform by The Linux Foundation that connects mentors with mentees to work on open source projects.
@@ -157,7 +157,7 @@ LFX Mentorship is a platform by The Linux Foundation that connects mentors with 
 - Upload resume/CV
 
 **Step 3: Project Selection**
-- Browse available projects
+- Browse available projects (Always Check CNCF Mentoring Repo.. Projct gets posted 2 week before then Site)
 - Read project descriptions carefully
 - Check required skills
 - Review mentor information
