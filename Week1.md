@@ -702,6 +702,7 @@ git commit -m "Add feature X"
 # 5. Push to remote
 git push origin main
 ```
+![repo-status JIM1nCWI_Z205yrX](https://github.com/user-attachments/assets/a7f96804-93cc-408d-9a79-f74b08160397)
 
 **Understanding git add:**
 ```bash
@@ -753,6 +754,8 @@ git commit --amend
 # Commit with specific author
 git commit --author="Name <email>" -m "Message"
 ```
+![complete-flow DYr-Pvsp_1IQISm](https://github.com/user-attachments/assets/a51027cc-78a2-47ff-8430-f42b8c83190e)
+
 
 **Viewing Commits:**
 ```bash
