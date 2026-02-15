@@ -1,6 +1,4 @@
 # Week 2 — Linux Fundamentals (Module 1–3)
-## Complete Professional Guide (Basic to Advanced)
-
 ---
 
 ## Table of Contents
@@ -74,6 +72,7 @@ Understanding the difference between a **kernel** and an **operating system** is
 │    (CPU, RAM, Disk, Network, I/O)       │
 └─────────────────────────────────────────┘
 ```
+![linux_os](https://github.com/user-attachments/assets/093262a6-66c4-4aa1-a947-a4f0ce7a242b)
 
 | Aspect | Kernel | Operating System |
 |---|---|---|
@@ -181,6 +180,7 @@ Linux is built from five major components working together as a cohesive system.
 │  (CPU, RAM, Storage, NIC, GPU, Peripherals)       │
 └──────────────────────────────────────────────────┘
 ```
+![linux_architecture](https://github.com/user-attachments/assets/25fe4614-25f8-4c67-bd6d-d4282119fb81)
 
 ### 2.2 Kernel
 
@@ -265,31 +265,8 @@ User-level software that runs on top of the Linux ecosystem:
 
 The kernel is the **lowest-level software** that interfaces directly with hardware. It acts as a **resource manager** and **abstraction layer**.
 
-```
-┌──────────────────────────────────────────┐
-│           User Space Programs            │
-│  (Applications, Libraries, Shell)        │
-├──────────────────┬───────────────────────┤
-│   System Call    │   System Call          │
-│   Interface      │   Interface           │
-├──────────────────┴───────────────────────┤
-│              KERNEL SPACE                │
-│  ┌─────────────┐  ┌──────────────────┐   │
-│  │   Process    │  │     Memory       │   │
-│  │  Scheduler   │  │    Manager       │   │
-│  └─────────────┘  └──────────────────┘   │
-│  ┌─────────────┐  ┌──────────────────┐   │
-│  │   Device     │  │   File System    │   │
-│  │   Drivers    │  │    (VFS)         │   │
-│  └─────────────┘  └──────────────────┘   │
-│  ┌─────────────┐  ┌──────────────────┐   │
-│  │  Network     │  │    Security      │   │
-│  │   Stack      │  │    Module        │   │
-│  └─────────────┘  └──────────────────┘   │
-├──────────────────────────────────────────┤
-│              HARDWARE                    │
-└──────────────────────────────────────────┘
-```
+<img width="620" height="658" alt="ditaa-b9ffae65be16d30be11b5eca188a7a143b1b8227 (1)" src="https://github.com/user-attachments/assets/5589de7e-94c4-42ce-959b-8bdadf6c9427" />
+
 
 ### 3.2 Process Management
 
@@ -433,53 +410,8 @@ uname -r
 
 Linux follows a **layered architecture** where each layer has a specific role and communicates only with adjacent layers.
 
-```
-┌─────────────────────────────────────────────────────┐
-│                                                     │
-│                 USER SPACE                           │
-│                                                     │
-│  ┌───────────────────────────────────────────────┐  │
-│  │  Layer 4: User Applications                   │  │
-│  │  ┌──────┐ ┌──────┐ ┌──────┐ ┌──────────────┐ │  │
-│  │  │ GUI  │ │ CLI  │ │Docker│ │  Databases   │ │  │
-│  │  │ Apps │ │Tools │ │      │ │              │ │  │
-│  │  └──────┘ └──────┘ └──────┘ └──────────────┘ │  │
-│  └───────────────────────────────────────────────┘  │
-│  ┌───────────────────────────────────────────────┐  │
-│  │  Layer 3: Shell / System Libraries            │  │
-│  │  ┌──────┐ ┌──────┐ ┌───────┐ ┌────────────┐  │  │
-│  │  │ Bash │ │ Zsh  │ │ glibc │ │ System     │  │  │
-│  │  │      │ │      │ │       │ │ Calls API  │  │  │
-│  │  └──────┘ └──────┘ └───────┘ └────────────┘  │  │
-│  └───────────────────────────────────────────────┘  │
-│                                                     │
-│═════════════════════════════════════════════════════│
-│              SYSTEM CALL INTERFACE                  │
-│═════════════════════════════════════════════════════│
-│                                                     │
-│                 KERNEL SPACE                         │
-│                                                     │
-│  ┌───────────────────────────────────────────────┐  │
-│  │  Layer 2: Kernel                              │  │
-│  │  ┌─────────┐ ┌─────────┐ ┌────────────────┐  │  │
-│  │  │ Process │ │ Memory  │ │ File System    │  │  │
-│  │  │ Mgmt    │ │ Mgmt    │ │ (VFS)          │  │  │
-│  │  └─────────┘ └─────────┘ └────────────────┘  │  │
-│  │  ┌─────────┐ ┌─────────┐ ┌────────────────┐  │  │
-│  │  │ Device  │ │ Network │ │ Security       │  │  │
-│  │  │ Drivers │ │ Stack   │ │ (SELinux)      │  │  │
-│  │  └─────────┘ └─────────┘ └────────────────┘  │  │
-│  └───────────────────────────────────────────────┘  │
-│                                                     │
-│  ┌───────────────────────────────────────────────┐  │
-│  │  Layer 1: Hardware                            │  │
-│  │  ┌─────┐ ┌─────┐ ┌──────┐ ┌─────┐ ┌──────┐  │  │
-│  │  │ CPU │ │ RAM │ │ Disk │ │ NIC │ │ GPU  │  │  │
-│  │  └─────┘ └─────┘ └──────┘ └─────┘ └──────┘  │  │
-│  └───────────────────────────────────────────────┘  │
-│                                                     │
-└─────────────────────────────────────────────────────┘
-```
+<img width="392" height="328" alt="muITn" src="https://github.com/user-attachments/assets/39335d59-ce40-43bd-ad51-e835f480750b" />
+
 
 ### 4.2 Hardware Layer
 
@@ -531,6 +463,8 @@ Everything that runs **outside the kernel** — applications, libraries, and use
 ## 5. Linux Distributions
 
 A **Linux distribution (distro)** = Linux Kernel + GNU Tools + Package Manager + Desktop Environment + Additional Software.
+<img width="758" height="405" alt="58111436-f8e29380-7be0-11e9-9eb6-a554429eeb21" src="https://github.com/user-attachments/assets/cf805646-0592-44ce-8a10-095c8ecbe6a7" />
+<img width="512" height="512" alt="Logo_Collage_Linux_Distro" src="https://github.com/user-attachments/assets/14c499e7-d231-4843-8038-94d877fe5c8c" />
 
 ### 5.1 Distribution Family Tree
 
@@ -559,7 +493,8 @@ A **Linux distribution (distro)** = Linux Kernel + GNU Tools + Package Manager +
 
 ### 5.2 Major Distributions Compared
 
-| Distro | Base | Package Manager | Best For | Release Model |
+
+o | Base | Package Manager | Best For | Release Model |
 |---|---|---|---|---|
 | **Ubuntu** | Debian | `apt` | Beginners, servers, cloud | Fixed (LTS every 2 years) |
 | **Debian** | Independent | `apt` | Stability, servers | Fixed (slow, stable) |
@@ -1086,6 +1021,8 @@ sudo yum remove <package>
 
 In Linux, **everything starts from root (`/`)**. Unlike Windows which has drive letters (C:\, D:\), Linux has a **single unified tree** structure.
 
+![standard-unix-filesystem-hierarchy-1 (1)](https://github.com/user-attachments/assets/abe1d251-8144-4862-aa00-46028ac2e9a6)
+
 ```
 /                          ← Root — the top of the entire file system
 ├── bin/                   ← Essential user binaries
@@ -1135,6 +1072,8 @@ The **Filesystem Hierarchy Standard** defines the directory structure and direct
   ┌─┼──┐
 docs  projects
 ```
+<img width="728" height="590" alt="0_bFnHaO8eYpW3dSuz" src="https://github.com/user-attachments/assets/83a59f80-46c8-483d-8273-ce88864c5172" />
+
 
 **Key Concepts:**
 - **Single root** — One starting point (`/`), unlike Windows drive letters
@@ -1270,6 +1209,8 @@ Contains **essential commands** needed for single-user mode and system recovery:
 ---
 
 ## 12. Paths in Linux
+![absolute-relative-path-linux](https://github.com/user-attachments/assets/849f9e2e-c765-4927-9326-bb153d2c5019)
+
 
 ### 12.1 Absolute Path
 
@@ -1330,6 +1271,8 @@ Documents/notes.txt          # relative to current directory
 ## 13. Navigation Concepts
 
 ### 13.1 Moving Between Directories
+![1_KbTO72sPS_K2f9HN1HSX0w](https://github.com/user-attachments/assets/18d8546c-2a8b-46d6-9d4f-1ec86c3a3222)
+
 
 ```bash
 # Go to home directory
@@ -1390,20 +1333,7 @@ ls -la /etc
 ```
 
 **Understanding `ls -l` Output:**
-```
--rw-r--r--  1  shivam  staff  4096  Feb 10 14:30  notes.txt
-│           │    │       │      │       │            │
-│           │    │       │      │       │            └── File name
-│           │    │       │      │       └── Modification date
-│           │    │       │      └── File size (bytes)
-│           │    │       └── Group owner
-│           │    └── File owner
-│           └── Hard link count
-└── File type + permissions
-    - = regular file
-    d = directory
-    l = symbolic link
-```
+![d3e74a87f423bbb62e39d9de30e6399d](https://github.com/user-attachments/assets/b774427f-6477-4c31-8517-061035141eb2)
 
 ### 13.3 Hidden Files
 
@@ -1452,6 +1382,8 @@ tree -sh
 ```
 
 **Example Output:**
+![find-hidden-files-in-linux-using-tree-command-1](https://github.com/user-attachments/assets/84edd301-6b49-478d-a185-1a183a989a0a)
+
 ```
 /home/shivam
 ├── Documents
@@ -1473,6 +1405,7 @@ tree -sh
 ---
 
 ## 14. Understanding File Types
+![file_type_codes_table](https://github.com/user-attachments/assets/f52d2c1a-905f-49a9-bbf9-de2b2a31d6e3)
 
 ### 14.1 Regular Files
 
