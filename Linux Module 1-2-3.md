@@ -1982,6 +1982,7 @@ The cursor moves with arrow keys.
 ^G Help    ^O Write Out  ^W Where Is  ^K Cut     ^U Paste
 ^X Exit    ^R Read File  ^\ Replace   ^J Justify ^T Spell
 ```
+<img width="898" height="595" alt="showing-line-number-using-c-option-in-nano-linux" src="https://github.com/user-attachments/assets/05fb89c9-b069-406d-ab10-1ad58edc8dcc" />
 
 **Essential Nano Shortcuts:**
 | Shortcut | Action |
@@ -2014,28 +2015,8 @@ vim -O file1.txt file2.txt # Open side by side (vertical split)
 **Vim's Modal Design:**
 Vim operates in **modes** — this is its core concept.
 
-```
-┌──────────────────────────────────────────────────────────┐
-│                                                          │
-│   ┌──────────────────┐         ┌──────────────────┐     │
-│   │   NORMAL MODE    │◄────────│  COMMAND MODE    │     │
-│   │  (Navigation,    │  Esc    │  (Save, Quit,    │     │
-│   │   Operations)    │────────►│   Search)        │     │
-│   └────────┬─────────┘   :    └──────────────────┘     │
-│            │                                            │
-│        i,a,o (Enter Insert)                             │
-│            │                                            │
-│   ┌────────▼─────────┐         ┌──────────────────┐    │
-│   │   INSERT MODE    │         │  VISUAL MODE     │    │
-│   │  (Type/Edit      │         │  (Select text)   │    │
-│   │   text)          │         │                  │    │
-│   └────────┬─────────┘         └──────────────────┘    │
-│            │                          ▲                  │
-│         Esc (Back to Normal)          │                  │
-│                              v, V, Ctrl+V               │
-│                         (from Normal mode)               │
-└──────────────────────────────────────────────────────────┘
-```
+![1694075572997](https://github.com/user-attachments/assets/4696a1f5-10f5-4279-9ee0-c5351fd5cc89)
+
 
 **Vim Modes Explained:**
 | Mode | Purpose | Enter With | Exit With |
