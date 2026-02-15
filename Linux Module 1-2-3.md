@@ -2253,3 +2253,4 @@ Vim operates in **modes** — this is its core concept.
 | `free -h` | Memory usage |
 
 ---
+
